@@ -143,7 +143,8 @@ set wrapscan                            " Searches wrap around end-of-file
 
 set ttyfast                             " Faster redrawing
 set lazyredraw                          " Only redraw when necessary
-set synmaxcol   =200                    " Only highlight the first 200 columns
+" set synmaxcol   =200                    " Only highlight the first 200 columns
+set synmaxcol   =0                      " Unlimit highlight columns
 
 set splitbelow                          " Open new windows below the current window
 " set splitright                          " Open new windows right of the current window
@@ -240,7 +241,8 @@ nnoremap <leader><CR> :normal o<CR>
 noremap <leader>, :tabnew ~/.vimrc<CR>
 noremap <leader>< :source ~/.vimrc<CR>
 
-noremap <leader>b :make<CR>
+" noremap <leader>b :w<CR> :!clear<CR> :make<CR>
+noremap <leader>b :w<CR> :!bash build.sh<CR>
 
 " run last command
 " nnoremap <leader>. :<UP><CR>
