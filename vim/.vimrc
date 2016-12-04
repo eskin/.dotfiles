@@ -243,7 +243,7 @@ noremap <leader>< :source ~/.vimrc<CR>
 
 " noremap <leader>b :w<CR> :!clear<CR> :make<CR>
 noremap <leader>b :w<CR> :!bash build.sh<CR>
-noremap <leader>r :w<CR> :!clear<CR> :!clang++ -std=c++1y -stdlib=libc++ % -o %.bin && ./%.bin && rm %.bin<CR>
+noremap <leader>r :w<CR> :!clear && clang++ -std=c++1y -stdlib=libc++ % && ./a.out && rm a.out<CR>
 
 " run last command
 " nnoremap <leader>. :<UP><CR>
