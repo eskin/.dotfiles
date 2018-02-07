@@ -11,7 +11,7 @@ Plug 'mhinz/vim-startify'               " Fancy start screen
 Plug 'vim-airline/vim-airline'          " Status line
 Plug 'vim-airline/vim-airline-themes'   " Themes for airline
 Plug 'eskin/tabline.vim'                " My tabline
-" Plug 'eskin/cake16'                     " My color scheme
+Plug 'eskin/cake16'                     " My color scheme
 
 " Git
 Plug 'tpope/vim-fugitive'               " Git client
@@ -22,8 +22,11 @@ Plug 'mbbill/undotree'                  " Undo history visualizer
 Plug 'scrooloose/nerdtree'              " A tree explorer plugin
 
 " C++ programming
-Plug 'valloric/youcompleteme',  { 'do': './install.py --clang-completer' }
-Plug 'jeaye/color_coded',       { 'do': 'cmake . && make -j4 && make install && make clean && make clean_clang' }
+" Plug 'valloric/youcompleteme',  { 'do': './install.py --clang-completer' }
+" Plug 'jeaye/color_coded',       { 'do': 'cmake . && make -j4 && make install && make clean && make clean_clang' }
+Plug 'valloric/youcompleteme',  { 'do': './install.py --clang-completer --system-libclang'  }
+" Plug 'jeaye/color_coded'
+" Plug 'jeaye/color_coded',       { 'do': 'mkdir build && cd build && cmake -DCUSTOM_CLANG=1 .. && make && make install'  }
 Plug 'ervandew/supertab'                " For youcompleteme
 Plug 'johnsyweb/vim-makeshift'          " Plugin for detecting your build system
 Plug 'nacitar/a.vim'                    " Swtich between source files and header files quickly
@@ -37,6 +40,7 @@ Plug 'jiangmiao/auto-pairs'             " Insert or delete brackets, parens, quo
 Plug 'tomtom/tcomment_vim'              " File-type sensible toggle comments
 Plug 'matze/vim-move'                   " Plugin to move lines and selections up and down
 Plug 'justinmk/vim-sneak'               " Motion to reach any location specified by two characters
+Plug 'PotatoesMaster/i3-vim-syntax'     " Syntax for i3 window manager"
 call plug#end()
 
 " Disable some standard plugins
@@ -74,7 +78,7 @@ if has("gui_running")
   inoremap <D-v> <C-g>u<C-r><C-o>*
 endif
 
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_left_alt_sep = ''
@@ -180,11 +184,11 @@ autocmd BufWritePre * :%s/\s\+$//e      " Trim trailing whitespace on save
 set gcr         =a:blinkon0             " Disable cursor blink
 
 set list                                " Show non-printable characters
-if has('multi_byte') && &encoding ==# 'utf-8'
-  let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
-else
+" if has('multi_byte') && &encoding ==# 'utf-8'
+"   let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
+" else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
-endif
+" endif
 
 set completeopt-=preview                " disable preview window popping up
 
