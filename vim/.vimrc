@@ -24,17 +24,17 @@ Plug 'scrooloose/nerdtree'              " A tree explorer plugin
 " C++ programming
 " Plug 'valloric/youcompleteme',  { 'do': './install.py --clang-completer' }
 " Plug 'jeaye/color_coded',       { 'do': 'cmake . && make -j4 && make install && make clean && make clean_clang' }
-Plug 'valloric/youcompleteme',  { 'do': './install.py --clang-completer --system-libclang'  }
+" Plug 'valloric/youcompleteme',  { 'do': './install.py --clang-completer --system-libclang'  }
 " Plug 'jeaye/color_coded'
 " Plug 'jeaye/color_coded',       { 'do': 'mkdir build && cd build && cmake -DCUSTOM_CLANG=1 .. && make && make install'  }
-Plug 'ervandew/supertab'                " For youcompleteme
-Plug 'johnsyweb/vim-makeshift'          " Plugin for detecting your build system
+" Plug 'ervandew/supertab'                " For youcompleteme
+" Plug 'johnsyweb/vim-makeshift'          " Plugin for detecting your build system
 Plug 'nacitar/a.vim'                    " Swtich between source files and header files quickly
 
 " Other languages
 Plug 'sirver/ultisnips'                 " Ultimate solution for snippets
 Plug 'honza/vim-snippets'               " Snippets files for various programming languages
-Plug 'godlygeek/tabular'                " Text filtering and alignment
+" Plug 'godlygeek/tabular'                " Text filtering and alignment
 Plug 'sheerun/vim-polyglot'             " A collection of language packs
 Plug 'jiangmiao/auto-pairs'             " Insert or delete brackets, parens, quotes in pair
 Plug 'tomtom/tcomment_vim'              " File-type sensible toggle comments
@@ -85,14 +85,14 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_skip_empty_sections = 1
 
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_enable_diagnostic_signs = 0
+" let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+" let g:ycm_min_num_of_chars_for_completion = 1
+" let g:ycm_enable_diagnostic_signs = 0
 
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
+" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -236,7 +236,7 @@ nnoremap L  $
 nnoremap <CR> w
 nnoremap <bs> ^
 
-nnoremap <leader>q :q<CR>
+" nnoremap <leader>q :q<CR>
 
 " add new line
 nnoremap <leader><CR> :normal o<CR>
@@ -286,28 +286,28 @@ cnoremap <c-j>  <down>
 cnoremap <c-k>  <up>
 
 
-if exists(":Tabularize")
-    vnoremap <leader>tab :Tabularize /
+" if exists(":Tabularize")
+    " vnoremap <leader>tab :Tabularize /
 "     nmap <leader>a= :Tabularize /=<CR>
 "     vmap <leader>a= :Tabularize /=<CR>
 "     nmap <leader>a\| :Tabularize /\|<CR>
 "     vmap <leader>a\| :Tabularize /\|<CR>
 "     nmap <leader>a: :Tabularize /:\zs<CR>
 "     vmap <leader>a: :Tabularize /:\zs<CR>
-endif
+" endif
 
-nmap f <Plug>Sneak_f
-nmap F <Plug>Sneak_F
-xmap f <Plug>Sneak_f
-xmap F <Plug>Sneak_F
-omap f <Plug>Sneak_f
-omap F <Plug>Sneak_F
-
-nmap t <Plug>Sneak_t
-nmap T <Plug>Sneak_T
-xmap t <Plug>Sneak_t
-xmap T <Plug>Sneak_T
-omap t <Plug>Sneak_t
-omap T <Plug>Sneak_T
+" nmap f <Plug>Sneak_f
+" nmap F <Plug>Sneak_F
+" xmap f <Plug>Sneak_f
+" xmap F <Plug>Sneak_F
+" omap f <Plug>Sneak_f
+" omap F <Plug>Sneak_F
+"
+" nmap t <Plug>Sneak_t
+" nmap T <Plug>Sneak_T
+" xmap t <Plug>Sneak_t
+" xmap T <Plug>Sneak_T
+" omap t <Plug>Sneak_t
+" omap T <Plug>Sneak_T
 
 " xnoremap p "_dP
