@@ -1,0 +1,118 @@
+Xft.antialias:  1
+Xft.autohint:   0
+Xft.dpi:        96
+Xft.hinting:    1
+Xft.hintstyle:  hintfull
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+Xcursor*theme: Neutral_Plus
+
+urxvt*depth: 32
+! urxvt*background: [85]#000000
+urxvt*termName: xterm-256color
+URxvt*geometry: 80x28
+URxvt*scrollBar: false
+URxvt.cursorUnderline: false
+!URxvt.perl-ext-common: default,clipboard.pl
+URxvt.perl-ext-common: default,clipboard.pl
+URxvt.keysym.Control-c: perl:clipboard:copy
+URxvt.keysym.Control-v: perl:clipboard:paste
+URxvt.keysym.Mod4-c: \003
+
+!URxvt*font: xft:Ubuntu Mono:size=16
+!URxvt*boldFont: xft:Ubuntu Mono:size=16
+
+! URxvt*font: xft:Roboto Mono for Powerline:size=10
+! URxvt*boldFont: xft:Roboto Mono for Powerline:size=10
+! URxvt*letterSpace: -2
+
+! URxvt*font: xft:Terminus:bold:size=10:antialias=false
+! URxvt*boldFont: xft:Terminus:bold:size=10:antialias=false
+!
+! URxvt*font: xft:Terminus:bold:size=14:antialias=false
+! URxvt*boldFont: xft:Terminus:bold:size=14:antialias=false
+
+URxvt*font: xft:Terminus:size=10:antialias=false
+URxvt*boldFont: xft:Terminus:size=10:antialias=false
+
+! URxvt*font: xft:Termsyn:size=10:antialias=false
+! URxvt*boldFont: xft:Termsyn:size=10:antialias=false
+
+! URxvt*font: xft:Anonymous Pro:bold:size=13:antialias=false
+! URxvt*boldFont: xft:Anonymous Pro:bold:size=13:antialias=false
+
+URxvt*letterSpace: 0
+! URxvt*letterSpace: -1
+
+! Base16 Eighties
+! Scheme: Chris Kempson (http://chriskempson.com)
+
+! #define base00 #2d2d2d
+! #define base01 #393939
+! #define base02 #515151
+! #define base03 #747369
+! #define base04 #a09f93
+! #define base05 #d3d0c8
+! #define base06 #e8e6df
+! #define base07 #f2f0ec
+! #define base08 #f2777a
+! #define base09 #f99157
+! #define base0A #ffcc66
+! #define base0B #99cc99
+! #define base0C #66cccc
+! #define base0D #6699cc
+! #define base0E #cc99cc
+! #define base0F #d27b53
+!
+! *.foreground:   base05
+! *.background:   base00
+! *.cursorColor:  base05
+!
+! *.color0:       base00
+! *.color1:       base08
+! *.color2:       base0B
+! *.color3:       base0A
+! *.color4:       base0D
+! *.color5:       base0E
+! *.color6:       base0C
+! *.color7:       base05
+!
+! *.color8:       base03
+! *.color9:       base08
+! *.color10:      base0B
+! *.color11:      base0A
+! *.color12:      base0D
+! *.color13:      base0E
+! *.color14:      base0C
+! *.color15:      base07
+!
+! ! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! ! use 'shell' template to set these if necessary
+! *.color16:      base09
+! *.color17:      base0F
+! *.color18:      base01
+! *.color19:      base02
+! *.color20:      base04
+! *.color21:      base06
+
+! cake16 by eskin
+*.background: #f7efdf
+*.foreground: #774f38
+
+*.color0:    #774f38
+*.color1:    #b95942
+*.color2:    #308444
+*.color3:    #996e1f
+*.color4:    #50707e
+*.color5:    #aa56b2
+*.color6:    #308090
+*.color7:    #ede4d4
+*.color8:    #878787
+*.color9:    #f10000
+*.color10:   #82a3b3
+*.color11:   #c79747
+*.color12:   #678797
+*.color13:   #afafaf
+*.color14:   #e4dccc
+*.color15:   #f7efdf
