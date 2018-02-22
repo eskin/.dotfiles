@@ -8,4 +8,5 @@ done
 
 ln -sfv ~/.dotfiles/linux/i3/config ~/.i3/config
 ln -sfv ~/.dotfiles/linux/Xresources ~/.Xresources
+ln -sfv ~/.dotfiles/linux/xinitrc ~/.xinitrc
 
